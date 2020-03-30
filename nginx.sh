@@ -31,9 +31,9 @@ restart(){
 	echo -e "${Green_font_prefix}nginx已停止 !${Font_color_suffix}"
 	$NGINX -c $CONF
 	if [ $? -eq 0 ]; then
-		echo -e "${Green_font_prefix}nginx启动成功--使用配置文件:$CONF !${Font_color_suffix}"
+		echo -e "${Green_font_prefix}nginx重启成功--使用配置文件:$CONF !${Font_color_suffix}"
 	else
-		echo -e "${Red_font_prefix}nginx启动出现问题！！！！!${Font_color_suffix}"
+		echo -e "${Red_font_prefix}nginx重启出现问题！！！！!${Font_color_suffix}"
 	fi
 }
 case $1 in
